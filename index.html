@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dghem | Web Developer</title>
+    <meta name="description" content="Dghem — Professional web developer crafting premium digital experiences.">
+    <link rel="icon" href="https://i.ibb.co/pv9NJ9TB/59bac9e8-fed2-40f2-8262-33878be50a67.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <canvas class="cursor-glow-canvas" id="cursorGlowCanvas"></canvas>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="page-transition-inner"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+         LOADING SCREEN
+         ═══════════════════════════════════════ -->
+    <div class="loader" id="loader">
+        <!-- Animated particle canvas -->
+        <canvas class="loader-particles" id="loaderParticles"></canvas>
+
+
+
+        <!-- Center content -->
+        <div class="loader-center">
+            <div class="loader-text-logo">
+                <span class="bracket bracket-left">&lt;</span>
+                <span class="bracket bracket-slash">/</span>
+                <img src="https://i.ibb.co/XfPqSFY8/1.png" alt="Dghem" class="signature-gif-like">
+                <span class="bracket bracket-right">&gt;</span>
+            </div>
+            <div class="loader-glow"></div>
+
+            <!-- Cinematic Progress Bar -->
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar" id="loaderProgressBar"></div>
+            </div>
+        </div>
+
+        <!-- Scan line -->
+        <div class="loader-scan"></div>
+    </div>
+
+    <!-- Subtle edge vignette -->
+    <div class="vignette"></div>
+
+    <!-- ═══════════════════════════════════════
+         HEADER
+         ═══════════════════════════════════════ -->
+    <header class="header" id="header">
+        <a href="#" class="header-logo">
+            <img src="https://i.ibb.co/XfPqSFY8/1.png" alt="Dghem">
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav-link active">Portfolio</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+         ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <!-- Blurred Video Background -->
+        <div class="hero-video-bg" id="heroVideoBg">
+            <iframe
+                src="https://player.vimeo.com/video/1181247073?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1&quality=1080p"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" title="Dghem Background"></iframe>
+            <div class="hero-video-overlay"></div>
+        </div>
+
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <img src="https://i.ibb.co/XfPqSFY8/1.png" alt="Dghem" class="hero-signature">
+                <strong>Developing</strong> Best<br>
+                <strong>Webites</strong> Today
+            </h1>
+
+            <p class="hero-subtitle">
+                Here I design, and develop any website you want.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">
+                    VIEW WORK
+                    <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="contact.html" class="btn-ghost">
+                    CONTACT ME
+                    <span class="arrow-circle"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line-v"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS
+         ═══════════════════════════════════════ -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <div class="section-label">Portfolio</div>
+            <h2 class="section-title"><strong>Featured</strong> Projects</h2>
+            <p class="section-subtitle">A showcase of my latest work, crafted with precision and passion.</p>
+        </div>
+
+        <div class="projects-grid">
+        <!-- MafiaMC -->
+        <a href="https://mafiamc.net" target="_blank" class="project-card mafia-card">
+            <div class="project-image" style="background-image: url('https://i.ibb.co/yndxVf4H/Screenshot-2.png');">
+            </div>
+            <div class="project-body">
+                <div class="project-meta">
+                    <img src="https://i.ibb.co/6c0TFHT3/mafia-server.png" alt="MafiaMC" class="project-logo">
+                    <div class="project-info">
+                        <h3>MafiaMC Website</h3>
+                        <span class="type">Minecraft Server Website</span>
+                    </div>
+                </div>
+                <p class="project-desc">
+                    Professional Minecraft server website with cinematic dark design, smooth animations, and a fully
+                    integrated experience.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Cloudflare</span>
+                </div>
+                <span class="project-link">
+                    Visit Project <i class="fas fa-arrow-right"></i>
+                </span>
+            </div>
+        </a>
+
+        <!-- Fadi Fitness -->
+        <a href="https://fadi-fitness.vercel.app" target="_blank" class="project-card fadi-card">
+            <div class="project-image" style="background-image: url('https://i.ibb.co/N2WKsrkZ/Screenshot-3.png');">
+            </div>
+            <div class="project-body">
+                <div class="project-meta">
+                    <img src="https://i.ibb.co/DPvpKBQg/icon.png" alt="Fadi Fitness" class="project-logo">
+                    <div class="project-info">
+                        <h3>Fadi Fitness</h3>
+                        <span class="type">Fitness Website</span>
+                    </div>
+                </div>
+                <p class="project-desc">
+                    A modern fitness platform with energetic blue aesthetics, smooth interactions, and a clean user
+                    experience tailored for athletes.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <span class="project-link">
+                    Visit Project <i class="fas fa-arrow-right"></i>
+                </span>
+            </div>
+        </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════ -->
+    <footer class="footer" id="contact">
+        <div class="footer-cta">
+            <h2 class="footer-cta-title"><strong>Let's Build</strong> Something<br><strong>Great</strong> Together</h2>
+            <p class="footer-cta-text">
+                Have a project in mind or want to collaborate? or any suggestions? I'm always open to new ideas and
+                exciting challenges.
+            </p>
+            <a href="contact.html" class="discord-btn">
+                <i class="fab fa-discord"></i>
+                Contact on Discord
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <img src="https://i.ibb.co/XfPqSFY8/1.png" alt="Dghem Signature" class="footer-signature">
+            <p class="copyright">© 2022 - 2026 Dev.Dghem. All rights reserved.</p>
+            <p class="footer-tagline">Developed with affort.</p>
+        </div>
+    </footer>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
